@@ -1,23 +1,33 @@
-counter = 0
-def find_element_index(array, value_to_find) = [2,3,4,5]
-  while array[counter] do
-  puts array[counter].index
-  counter += 1
+
+def find_element_index(array, value_to_find)
+  array.length.times do |count|
+    if array[count] == value_to_find
+      return count
+    end
   end
+  nil
 end
 
-counter=0
-def find_max_value(array) = [1,2,3,4,5,4,3,2,1]
-  while array[counter] do
-  puts array[counter].max
-  counter += 1
-  end
+def find_max_value(array)
+  max = 0
+    array.length.times do |count|
+      if array[count] > max
+        max = array[count]
+      end
+    end
+  max
 end
 
-counter=0
-def find_min_value(array) = [1,2,3,4,5,4,3,2,1]
-  while array[counter] do
-  puts array[counter].min
-  counter += 1
-  end
+def find_min_value(array)
+  min = 0
+    array.length.times do |count|
+      if count == 0
+        min = array[count]
+      else
+        if array[count] < min
+          min = array[count]
+        end
+      end
+    end
+  min
 end
