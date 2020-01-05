@@ -3,10 +3,9 @@ def find_element_index(array, value_to_find)
   puts array.index(2,value_to_find)
 end
 
-counter=0
 def find_max_value(array)
   i=0
-  while i<array.lengh do
+  while i<array.length do
   puts array[i].max
   i += 1
   end
