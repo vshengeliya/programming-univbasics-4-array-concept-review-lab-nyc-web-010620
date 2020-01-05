@@ -5,6 +5,7 @@ def find_element_index(array, value_to_find)
   puts array[i].index(value_to_find)
   i += 1
   end
+  find_element_index
 end
 
 # counter=0
